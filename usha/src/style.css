@@ -1,0 +1,908 @@
+
+@import url('http://fonts.cdnfonts.com/css/axiforma');
+
+*{
+    font-family: 'Axiforma', sans-serif;
+}
+
+button:focus{
+    outline: none !important;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+    background: #ffffff4d;
+  }
+  
+  ::selection {
+    background: #ffffff4d;
+  }
+
+input::selection{
+    background: #58585870;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
+}
+
+.location_search_result{
+    padding: 10px;
+}
+
+.location_search_result p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #3f3f3f;
+    margin: 0;
+}
+.location_search_result span{
+    font-size: 14px;
+    font-weight: 300;
+    color: #3f3f3f;
+}
+
+.choose_location{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.navbar{
+    height: 60px;
+    padding: 0px !important;
+}
+
+.navbar-brand{
+    padding-top: unset !important;
+    padding-bottom: unset !important;
+}
+
+.navbar .navbar-brand{
+    height: 39px;
+}
+
+.navbar .navbar-brand img{
+    height: 100%;
+}
+
+.breadcrumb{
+    background-color: unset !important;
+    justify-content: center;
+}
+
+.search-location, .search-services{
+    background-color: #fff;
+    height: 54px;
+}
+
+.search-location{
+    cursor: pointer; 
+}
+
+.search-location, .search-services{
+    border-radius: 4px;
+}
+
+
+.point{
+    position: absolute;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    z-index: 99999;
+    display: inline-block;
+    left: 1.5rem;
+}
+
+.point, .location_info{
+    display: none;
+}
+
+.location_info{
+    border-radius: 8px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    z-index: 6;
+    text-align: initial;
+    border: 1px solid #e3e3e3;
+    width: 25rem;
+    padding: 10px;
+}
+
+.heading_location_info .loc_text span{
+    color: #0f0f0f;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 0;
+}
+
+.heading_location_info span{
+    font-size: 14px;
+    color: #6e43e5;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+.caret_location{
+    display: flex !important;
+    align-items: center;
+    margin-left: 10px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    font-weight: 300;
+    color: #9c9c9c;
+    font-size: 14px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    font-weight: 300;
+    color: #9c9c9c;
+    font-size: 14px;
+  }
+  
+  ::placeholder {
+    font-weight: 300;
+    color: #9c9c9c;
+    font-size: 14px;
+
+  }
+
+.site_hero input{ 
+    width: 100%;
+    margin-left: 6%;
+    border: unset;  
+    outline: unset;
+}
+
+
+.fa-magnifying-glass:before, .fa-search:before, .fa-location-dot:before, .fa-map-marker-alt:before{
+    position: absolute;
+    font-size: 17px;
+    z-index: 6;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    color: #757575;
+}
+
+.location_search .fa-magnifying-glass:before, .fa-search:before, .fa-location-dot:before, .fa-map-marker-alt:before{
+    position: unset;
+}
+
+.location_search {
+    display: flex;
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    padding: 7px;
+    align-items: center;
+}
+
+.location_search input{
+    margin-left: 3%;
+}
+
+
+.site_hero{
+    background-image: url('http://localhost:3000/vendor/img/hero_1.jpeg');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 552px;
+}
+.site_hero_overlay{
+    background: linear-gradient(180deg,rgba(0,0,0,.16),rgba(0,0,0,.8));
+    height: 100%;
+}
+
+.service_suggestion{
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0 0;
+}
+.service_suggestion a{
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+.service_suggestion a:hover {
+    color: #fff;
+    text-decoration: unset;
+}
+
+.site_hero .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-item{
+    margin-right: 10px;
+}
+
+.reg_prof{
+    border-bottom: 2px solid #fff;
+    height: 29px;
+}
+
+.breadcrumb .breadcrumb-item {
+    font-size: 10px;
+    color: white !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: white !important;
+}
+
+h1{
+    font-size: 48px !important;
+    font-weight: 500 !important;
+    color: white !important;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.w-1200{
+    width: 1200px !important;
+}
+
+.oninput_loc_res_child{
+    margin-bottom: 10px;
+}
+
+.service_row{
+    background: #ffffff;
+    box-shadow: 0 8px 26px 0 rgb(0 0 0 / 8%);
+    border-radius: 5px;
+    margin-top: -3rem;
+}
+
+
+.all_services .container{
+    text-align: -webkit-center;
+    width: 60vw !important;
+}
+
+.service_row img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.service_row p{
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #212121;
+}
+
+.service_row .col-md-2{
+    padding: 10px 0px;
+    cursor: pointer;
+    width: 95%;
+    margin: 10px;
+    position: unset;
+    transition: 0.2s;
+}
+.service_row a:hover{
+    color: #000000;
+}
+
+.service_row .services:hover{
+    background: #dadada;
+    border-radius: 5px;
+}
+
+.appliance_repair_right_sidebar{
+    position: fixed;
+    background: white;
+    height: 100vh;
+    width: 0vw;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    transition: 0.2s;
+}
+
+
+
+.appliance_repair .head_appliance_repair{
+    font-size: 16px;
+}
+
+.all_services{
+    color: #212121;
+}
+
+.close_drawer{
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.close_drawer:hover{
+    background: #e5e5e5;
+    border-radius: 5px;
+}
+
+.appliance_title{
+    font-size: 14px;
+}
+
+.appliance_image img{
+    width: 100%;
+}
+
+
+.service_row hr{
+    margin: 0;
+}
+
+.appliance_repair_overlay{
+    position: fixed;
+    width: 0vw;
+    height: 100vh;
+    background: #000000d4;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.1s;
+}
+
+
+
+.hero_content{
+    height: 410px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer */
+
+footer .main_footer{
+    background: black;
+}
+
+footer .main_footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main_footer ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.main_footer ul li{
+    line-height: 36px;
+    list-style-type: none;
+    margin-right: 28px;
+    opacity: .8;
+    transition: opacity .2s;
+}
+
+.main_footer ul li:hover{
+    opacity: 1;
+}
+
+.main_footer{
+    padding: 24px 0 8px;
+    font-size: 14px;
+}
+
+
+.main_footer hr{
+    margin: 0;
+    border-top: 1px solid #424242;
+}
+
+
+.service_title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 18px 0px 0px 0px;
+}
+
+.country_lists span{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer_last_row{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+
+.footer_last_row img {
+    width: 150px;
+}
+
+.footer_last_row span{
+    color: #fff;
+    margin-left: 16px;
+    font-size: 12px;
+    opacity: .8;
+    transition: opacity .2s;
+}
+
+.social_media_account li{
+    font-size: 20px;
+    color: #fff;
+    margin-right: 15px !important;
+}
+
+.social_media_account{
+    margin: auto;
+}
+
+.service_address p{
+    margin-bottom: 0;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.service_page_nav .nav-link{
+    line-height: 20px;
+    font-weight: 500;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 14px;
+} 
+
+.service_page_breadcrumb{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.service_page_breadcrumb li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgb(84, 84, 84);
+}
+
+.service_page_breadcrumb a{
+    color: rgb(84, 84, 84);
+}
+
+.service_page_breadcrumb a:hover{
+    color: rgb(84, 84, 84);
+}
+
+.service_page_breadcrumb span{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.service_page_title{
+    height: 10rem;
+    margin: auto;
+    color: rgb(15, 15, 15);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.carousel-caption {
+    text-align: left !important;
+}
+
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: linear-gradient(180deg,rgba(0,0,0,.16),rgba(0,0,0,.8));
+  }
+
+.carousel-caption h1{
+    font-size: 40px !important;
+}
+
+
+.service_page_hero .carousel-inner{
+    border-radius: 8px;
+}
+
+
+.badge{
+    width: fit-content;
+}
+
+
+
+.service_page_title a span{
+    color: rgb(15, 15, 15);
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.service_page_title a:hover{
+    text-decoration: none;
+}
+
+.service_page_title svg{
+    width: 16px;
+}
+
+.service_page_title .badge{
+    border: 1px solid #cccccc;
+}
+
+.hr_service_page{
+    margin-top: 3rem;
+}
+
+.hr_service_page hr{
+    border-top: 4px solid rgb(165 165 165 / 14%);
+}
+.service_providers_inner h2{
+    color: rgb(15, 15, 15);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.service_providers_inner{
+    padding-top: 1rem;
+    margin-top: 4rem;
+    border-top: 1px solid #cacaca;
+}
+
+.service_providers img{
+    width: 96px;
+    height: 96px;
+    border-radius: 8px;
+}
+
+.service_provider_title{
+    font-weight: 700;
+    color: rgb(15, 15, 15);
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.service_rating{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(84, 84, 84);
+    margin-top: 4px;
+}
+
+.service_rate{
+    color: rgb(15, 15, 15);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+.service_provide_detail p{
+    padding: 0;
+    margin: 0;
+}
+
+.service_provider_points li{
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(84, 84, 84);
+}
+
+.service_detail_view {
+    color: rgb(110, 66, 229);
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.service_detail_view:hover{
+    color: rgb(110, 66, 229);
+    text-decoration: none;
+}
+
+.about_service h4{
+    color: rgb(15, 15, 15);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.about_service_description, .about_service ol li, .about_service p{
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(84, 84, 84);
+}
+.about_service h3{
+    color: rgb(15, 15, 15);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+
+
+.service_detail_popup_ovelay{
+    background: rgb(0 0 0 / 77%);
+    position: fixed;
+    height: 0vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    z-index: 16;
+    transition: 0.1s;
+}
+.service_detail_popup_ovelay_active{
+    height: 100vh;
+}
+
+
+.service_detail{
+    background: white;
+    position: fixed;
+    width: 50%;
+    height: 90%;
+    left: 50%;
+    top: -52%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.service_detail_active{
+    top: 50%;
+}
+
+.poppup_close{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background: #dedede;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #767676;
+    font-weight: bold;
+    z-index: 17;
+}
+
+
+/* scroll start  */
+
+/* .service_detail::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+
+.service_detail::-webkit-scrollbar-track {
+    border-radius: 15px;
+  }
+   
+
+.service_detail::-webkit-scrollbar-thumb {
+    background: rgba(24, 24, 24, 0.267); 
+  }
+  
+.service_detail::-webkit-scrollbar-thumb:hover {
+    background: rgba(24, 24, 24, 0.466); 
+  } */
+
+/* scroll end  */
+
+
+.service_info_popup_inner1{
+    padding-left: 16px;
+    padding-top: 32px;
+}
+
+.service_info_popup_inner2{
+    padding-left: 16px;
+}
+
+.service_inner_title{
+    color: rgb(15, 15, 15);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dot{
+    font-size: 5px;
+    margin: 0 10px;
+}
+
+.service_info_popup_inner2 .service_rate{
+    display: flex;
+    align-items: center;
+}
+
+.service_info_popup_inner1 h3{
+    color: rgb(15, 15, 15);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.service_inner_more {
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(84, 84, 84);
+}
+
+.services_list{
+    overflow-y: scroll;
+    height: 90vh;
+}
+
+.services_list a{
+    width: 100%;
+    color: #5c5c5c;
+    font-weight: 500;
+}
+
+
+/* -------------------clean and pest sidebar start-------------------- */
+
+
+.cleaning_pest_right_sidebar{
+    position: fixed;
+    background: white;
+    height: 100vh;
+    width: 0vw;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.cleaning_pest .head_cleaning_pest{
+    font-size: 16px;
+}
+
+.cleaning_pest_overlay{
+    position: fixed;
+    width: 0vw;
+    height: 100vh;
+    background: #000000d4;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.1s;
+}
+
+.services_list .list_data {
+    height: 3rem;
+}
+
+
+/* -------------------clean and pest sidebar end-------------------- */
+
+/* -------------------home repair sidebar start-------------------- */
+
+
+.home_repair_right_sidebar{
+    position: fixed;
+    background: white;
+    height: 100vh;
+    width: 0vw;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.home_repair .head_home_repair{
+    font-size: 16px;
+}
+
+.home_repair_overlay{
+    position: fixed;
+    width: 0vw;
+    height: 100vh;
+    background: #000000d4;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.1s;
+}
+
+.services_list .list_data {
+    height: 3rem;
+}
+
+
+/* -------------------home repair sidebar end-------------------- */
+
+
+.appliance_repair{
+    height: 10vh;
+}
+
+
+
+.carousel_slides {
+    margin: 30px 0px;
+}
+
+.carousel_slides img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    padding: 10px;
+    font-weight: 300;
+    border-radius: 15px;
+    margin-bottom: 14px;
+    transition: 0.4s;
+}
+
+.carousel_slides img:hover {
+    transform: scale(1.07);
+}
+
+.carousel_card_title {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #212121;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.carousel_card_desc
+{
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.react-multiple-carousel__arrow{
+    background: rgb(255 255 255) !important;
+}
+
+.react-multiple-carousel__arrow::before{
+    color: #000 !important;
+}
+
+.carousel_main_title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #212121;
+}
